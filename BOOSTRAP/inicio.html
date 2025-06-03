@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body style="background-color: rgb(247, 159, 239);"> <center> <br><br><br><br><br><br><br>
+    <h1 style="text-align: center; color: rgb(0, 0, 0); font-size: 50px; margin-top: 0px; margin-bottom: 0px; font-family:  Georgia, 'Times New Roman', Times, serif;">N.V NAILS </h1> <br>
+        <label for="Usuario" style="font-size: 25px;">Usuario</label>
+        <input type="text" placeholder="Ej.Alondra" required>
+        <label for="contraseña"style="font-size: 25px;">Contraseña</label>
+        <input type="password" placeholder="" required id="password">
+        <input type="checkbox" id="checkpass" onchange="oncheck(this)">
+        <label for="checkpass" id="label-pass" style="font-size: 18px;">Mostrar Contraseña</label>
+   <script>
+       function oncheck(e){
+           var inputpass= document.getElementById("password");
+           var labelshow= document.getElementById("label-pass");
+           inputpass.type=e.checked ? "text" : "password";
+           labelshow.textContent=e.checked ? "ocultar contraseña" : "mostrar contraseña"
+         }
+   </script>
+   <br><br><br>
+<a href="paginaprinc.html"><button style="cursor: pointer; font-size: 15px; background-color: rgb(255, 0, 217);">Ingresar</button></a>
+<a href="registro.html"><button style="cursor: pointer; font-size: 15px; background-color: rgb(255, 0, 217);">Registrarse</button></a>
+<center><a href="file:///D:/MI%20WEB/BOOSTRAP/boostrap.html"><button style="cursor: pointer; font-size: 15px; background-color: rgb(255, 0, 217); margin-top: 200px;">Regresar</button></a></center>
+ 
+</center>
+
+
+
+
+    
+  
+</body>
+</html>
